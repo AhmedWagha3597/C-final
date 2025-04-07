@@ -9,6 +9,7 @@ using three;
 using four;
 using five;
 using six;
+using System.Reflection;
 namespace seven
 {
    class truck : vehicles
@@ -30,7 +31,16 @@ namespace seven
         }
         public override double calculateTax()
         {
-            return price += (price * 0.20);
+            return price * 0.20;
+        }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"Load capacity: {loadcapacity}");
+           
         }
     }
 }

@@ -35,12 +35,21 @@ namespace four
 
             public car(string n, double price, double sp, string vtype, string md, double hp) : base(n, price, sp, vtype)
             {
-                model = n;
+                model = md;
                 horsepower = hp;
             }
             public override double calculateTax()
             {
-                return price += (price * 0.10);
+                return price * 0.10;
             }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"Model: {model}");
+            Console.WriteLine($"Horse power: {horsepower}");
         }
+    }
     }

@@ -17,12 +17,12 @@ namespace three
             public void setaltitude(double at)
             {
                 altitude = at;
-            }
+           }
             public double getaltitude()
             {
                 return altitude;
 
-
+            
             }
 
           
@@ -32,8 +32,18 @@ namespace three
             }
             public override double calculateTax()
             {
-                return price += (price * 0.15);
+                return price * 0.15;
             }
+
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"Altitude: {altitude}");
+       
         }
+    }
     }
 

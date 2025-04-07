@@ -26,7 +26,17 @@ namespace six
         }
         public override double calculateTax()
         {
-            return price += (price * 0.10);
+            return price * 0.10;
+        }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"Model: {model}");
+            Console.WriteLine($"Horse power: {horsepower}");
+            Console.WriteLine($"truboboost: {turboboost}");
         }
     }
 }

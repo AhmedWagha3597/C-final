@@ -11,11 +11,6 @@ namespace two
 
 
 
-
-
-
-
-
     class Train : vehicles
     {
         protected double units;
@@ -36,7 +31,16 @@ namespace two
         }
         public override double calculateTax()
         {
-            return price = price*1;
+            return 0;
+        }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"units: {units}");
+          
         }
 
     }

@@ -1,7 +1,8 @@
-using one;
+﻿using one;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,7 +35,16 @@ namespace eight
         }
         public override double calculateTax()
         {
-            return price = price * 1;
+            return price * 0.05;
+        }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"Seating capacity: {SeatingCapacity}");
+        
         }
 
     }

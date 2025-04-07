@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -32,7 +32,16 @@ namespace FInalProjectC_
         }
         public override double calculateTax()
         {
-            return price = price * 1;
+            return  price * 0.05;
+        }
+        public  override void DisplayInfo()
+        {
+            Console.WriteLine($"Vehicle: {name}");
+            Console.WriteLine($"Type: {vehicletype}");
+            Console.WriteLine($"Price: ${price}");
+            Console.WriteLine($"Speed: {speed} ");
+            Console.WriteLine($"SeatingCapacity: {SeatingCapacity}");
+            Console.WriteLine($"Number of helipad: {helipad}");
         }
     }
 }
