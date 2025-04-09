@@ -34,7 +34,14 @@ namespace three
             {
                 return price * 0.15;
             }
-
+        public airplane() : base()
+        {
+            altitude = 59.4;
+        }
+        public airplane(airplane b) : base(b)
+        {
+            altitude = b.altitude;
+        }
         public override void DisplayInfo()
         {
             Console.WriteLine($"Vehicle: {name}");

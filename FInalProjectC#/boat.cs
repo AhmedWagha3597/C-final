@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using two;
 
 namespace eight
 {
@@ -27,6 +28,14 @@ namespace eight
         public int getseat()
         {
             return SeatingCapacity;
+        }
+        public boat() : base()
+        {
+            SeatingCapacity = 59;
+        }
+        public boat(boat b) : base(b)
+        {
+            SeatingCapacity = b.SeatingCapacity;
         }
         public boat(string n, double price, double sp, string vtype, int sc) : base(n, price, sp, vtype)
         {

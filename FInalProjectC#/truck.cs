@@ -24,6 +24,14 @@ namespace seven
         {
             return loadcapacity;
         }
+        public truck() : base()
+        {
+            loadcapacity = 59.4;
+        }
+        public truck(truck b) : base(b)
+        {
+            loadcapacity = b.loadcapacity;
+        }
 
         public truck(string n, double price, double sp, string vtype,double ld) :base(n,price,sp,vtype)
         {

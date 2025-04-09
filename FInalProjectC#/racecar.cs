@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using two;
 
 namespace six
 {
@@ -19,7 +20,14 @@ namespace six
         {
             return turboboost;
         }
-
+        public racecar() : base()
+        {
+            turboboost = 59.4;
+        }
+        public racecar(racecar b) : base(b)
+        {
+            turboboost = b.turboboost;
+        }
         public racecar(string n, double price, double sp, string vtype,string md,double hp,double tb) :base(n,price,sp,vtype,md,hp)
         {
             turboboost=tb;

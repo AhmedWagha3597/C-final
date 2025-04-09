@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,16 @@ namespace two
         {
             units = un;
         }
+        public Train() : base()
+        {
+            units = 59.4;
+        }
+        public Train(Train b) : base(b)
+        {
+            units = b.units;
+        }
+      
+
         public override double calculateTax()
         {
             return 0;

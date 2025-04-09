@@ -25,7 +25,14 @@ namespace FInalProjectC_
         {
             helipad = hep;
         }
-
+        public LuxuryYacht() : base()
+        {
+            helipad = 59;
+        }
+        public LuxuryYacht(LuxuryYacht b) : base(b)
+        {
+            helipad = b.helipad;
+        }
         public LuxuryYacht(string n, double price, double sp, string vtype,int sc, int hep) : base(n, price, sp, vtype, sc)
         {
             helipad = hep;

@@ -24,6 +24,14 @@ namespace five
 
 
         }
+        public cargoplane() : base()
+        {
+            cargocapacity = 59.4;
+        }
+        public cargoplane(cargoplane b) : base(b)
+        {
+            cargocapacity = b.cargocapacity;
+        }
         public cargoplane(string n, double price, double sp, string vtype,double at,double cp) :base(n,price,sp,vtype,at)
         {
             cargocapacity=cp;

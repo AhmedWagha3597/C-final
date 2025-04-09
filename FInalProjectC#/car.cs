@@ -32,8 +32,17 @@ namespace four
             {
                 return horsepower;
             }
-
-            public car(string n, double price, double sp, string vtype, string md, double hp) : base(n, price, sp, vtype)
+        public car() : base()
+        {
+            model = "Unknown";
+            horsepower = 50;
+        }
+        public car(car b) : base(b)
+        {
+            model = b.model;
+            horsepower = b.horsepower;
+        }
+        public car(string n, double price, double sp, string vtype, string md, double hp) : base(n, price, sp, vtype)
             {
                 model = md;
                 horsepower = hp;

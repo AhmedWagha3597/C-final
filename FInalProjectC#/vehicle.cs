@@ -70,5 +70,25 @@ namespace one
             Console.WriteLine($"Speed: {speed} ");
         }
 
+      
+
+        protected vehicles()
+        {
+            name = "unknown";
+            price = 0;
+            speed = 0;
+            vehicletype = "unknown";
+
+        }
+        protected vehicles(vehicles b)
+        {
+            name = b.name;
+            price = b.price;
+            speed = b.speed;
+            vehicletype = b.vehicletype;
+        }
+
+
+
     }
 }
