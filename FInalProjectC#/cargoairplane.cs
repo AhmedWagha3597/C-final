@@ -6,7 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 using one;
 using two;
+using two;
+using three;
+using four;
+using five;
+using six;
+using seven;
+using eight;
+using exone;
+using extwo;
+using exfour;
+using exthree;
+using exfour;
+using prog;
+using sorting;
+using linq;
 
+
+using tx;
 namespace five
 {
     class cargoplane : airplane
@@ -16,6 +33,14 @@ namespace five
 
         public void setcargocp(double cp)
         {
+
+            if(cp < 0 || cp >2000)
+            {
+                throw new InvalidCargoCapacityException(name);
+            }
+
+
+
             cargocapacity = cp;
         }
         public double getcargocapacity()
@@ -32,9 +57,16 @@ namespace five
         {
             cargocapacity = b.cargocapacity;
         }
-        public cargoplane(string n, double price, double sp, string vtype,double at,double cp) :base(n,price,sp,vtype,at)
+        public cargoplane(string n, double price, double sp, string vtype, double at, double cp) : base(n, price, sp, vtype, at)
         {
-            cargocapacity=cp;
+            if (cp <=0|| cp > 2000)
+            {
+                throw new InvalidCargoCapacityException(n);
+            }
+            else
+            {
+                cargocapacity = cp;
+            }
         }
         public override double calculateTax()
         {

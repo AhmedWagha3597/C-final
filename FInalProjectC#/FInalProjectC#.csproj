@@ -47,16 +47,28 @@
     <Compile Include="boat.cs" />
     <Compile Include="car.cs" />
     <Compile Include="cargoairplane.cs" />
+    <Compile Include="InvalidCargoCapacityException.cs" />
+    <Compile Include="InvalidPriceException.cs" />
+    <Compile Include="InvalidSpeedException.cs" />
     <Compile Include="luxaryyacht.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="racecar.cs" />
+    <Compile Include="TaxCalculator.cs" />
     <Compile Include="train.cs" />
     <Compile Include="truck.cs" />
     <Compile Include="vehicle.cs" />
+    <Compile Include="VehicleComparer.cs" />
+    <Compile Include="VehicleException.cs" />
+    <Compile Include="VehicleStatistics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vehicles.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
